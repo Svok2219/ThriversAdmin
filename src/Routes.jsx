@@ -5,14 +5,13 @@ import Error404 from "./components/Dashboard/Error/Error404";
 import Login from "./components/Login/Login";
 import { createContext } from "react";
 export const UserContext = createContext(null);
-
 const Router = () => {
   const [value, setValue] = useState({});
   const providerValue = useMemo(() => ({ value, setValue }), [value, setValue]);
 
   return (
     <BrowserRouter>
-      <UserContext.Provider>
+      <UserContext.Provider value={providerValue}>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/dashboard/*" element={<Dashboard />} />

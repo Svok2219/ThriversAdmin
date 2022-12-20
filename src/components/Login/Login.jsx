@@ -2,10 +2,12 @@ import React from "react";
 import { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
+// import { UserContext } from "../../assets/userContext";
 import Button from "@mui/material/Button";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import axios from "axios";
+import { UserContext } from "../../Routes";
 
 const Login = () => {
   const {
@@ -14,7 +16,7 @@ const Login = () => {
     formState: { errors },
   } = useForm();
   const navigate = useNavigate();
-  // const { value, setValue } = useContext(UserContext);
+  const { value, setValue } = useContext(UserContext);
   const [message, setMessage] = useState("");
   const [open, setOpen] = useState(false);
   const [severity, setSeverity] = useState("success");

@@ -12,7 +12,7 @@ const Router = () => {
 
   return (
     <BrowserRouter>
-      <UserContext.Provider value={providerValue}>
+      <UserContext.Provider>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/dashboard/*" element={<Dashboard />} />

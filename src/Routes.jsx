@@ -3,7 +3,9 @@ import { Routes, Route, BrowserRouter, useNavigate } from "react-router-dom";
 import Dashboard from "./components/Dashboard/Dashboard";
 import Error404 from "./components/Dashboard/Error/Error404";
 import Login from "./components/Login/Login";
-import { UserContext } from "./assets/userContext";
+import { createContext } from "react";
+export const UserContext = createContext(null);
+
 const Router = () => {
   const [value, setValue] = useState({});
   const providerValue = useMemo(() => ({ value, setValue }), [value, setValue]);

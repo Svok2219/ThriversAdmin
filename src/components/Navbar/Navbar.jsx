@@ -1,12 +1,7 @@
 import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import Logo from "./../../assets/img/logo.png";
-// import ProfileImage from "./../../assets/img/profile-img.jpg";
-import messageTwo from "./../../assets/img/messages-2.jpg";
-import messageOne from "./../../assets/img/messages-1.jpg";
-import messageThree from "./../../assets/img/messages-3.jpg";
+
 import { signOut } from "firebase/auth";
-import { UserContext } from "../../assets/userContext";
 import { auth } from "./../../firebase-config";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -15,7 +10,6 @@ import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const { value, setValue } = useContext(UserContext);
   const navigate = useNavigate();
   const logout = async () => {
     localStorage.removeItem("admin-token");

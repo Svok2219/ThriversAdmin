@@ -148,11 +148,11 @@ const EditBlog = () => {
                         defaultValue={Blog?.Writer}
                         {...register("BlogWriter", {
                           required: "Blog Title is required",
-                          minLength: {
-                            value: 6,
-                            message:
-                              "Blog Title must have at least 3 characters",
-                          },
+                          // minLength: {
+                          //   value: 6,
+                          //   message:
+                          //     "Blog Title must have at least 3 characters",
+                          // },
                         })}
                       />
                       <label htmlfor="title">Blog Writer Name</label>

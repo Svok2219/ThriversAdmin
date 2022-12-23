@@ -134,11 +134,11 @@ const EditInternShip = () => {
                         defaultValue={InternShip?.title}
                         {...register("InternshipTitle", {
                           required: "Internship Title is required",
-                          minLength: {
-                            value: 6,
-                            message:
-                              "InternShip Title must have at least 3 characters",
-                          },
+                          // minLength: {
+                          //   value: 6,
+                          //   message:
+                          //     "InternShip Title must have at least 3 characters",
+                          // },
                         })}
                       />
                       <label htmlfor="title">InternShip Title</label>

@@ -152,11 +152,11 @@ const EditRecognizers = () => {
                         defaultValue={Recognizers?.Title}
                         {...register("RecognizersTitle", {
                           required: "Recognizers Title is required",
-                          minLength: {
-                            value: 6,
-                            message:
-                              "Recognizers Title must have at least 3 characters",
-                          },
+                          // minLength: {
+                          //   value: 6,
+                          //   message:
+                          //     "Recognizers Title must have at least 3 characters",
+                          // },
                         })}
                       />
                       <label htmlfor="title">Recognizers Title</label>

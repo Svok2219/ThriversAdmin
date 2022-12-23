@@ -136,11 +136,11 @@ const EditMentorship = () => {
                         defaultValue={Mentorship?.title}
                         {...register("MentorshipProgramTitle", {
                           required: "Mentorship Title is required",
-                          minLength: {
-                            value: 6,
-                            message:
-                              "Mentorship Title must have at least 3 characters",
-                          },
+                          // minLength: {
+                          //   value: 6,
+                          //   message:
+                          //     "Mentorship Title must have at least 3 characters",
+                          // },
                         })}
                       />
                       <label htmlfor="title">Mentorship Program Title</label>

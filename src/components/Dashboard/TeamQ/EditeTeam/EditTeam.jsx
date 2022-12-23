@@ -137,11 +137,11 @@ const EditTeam = () => {
                         defaultValue={Team?.Name}
                         {...register("TeamName", {
                           required: "Name is required Here",
-                          minLength: {
-                            value: 6,
-                            //     message:
-                            //       "Team Title must have at least 6 characters",
-                          },
+                          // minLength: {
+                          //   value: 6,
+                          //       message:
+                          //         "Team Title must have at least 6 characters",
+                          // },
                         })}
                       />
                       <label htmlfor="title">Team Member Name</label>

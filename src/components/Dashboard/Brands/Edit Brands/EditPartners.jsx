@@ -152,11 +152,11 @@ const EditPartners = () => {
                         defaultValue={Partners?.Title}
                         {...register("PartnersTitle", {
                           required: "Partners Title is required",
-                          minLength: {
-                            value: 6,
-                            message:
-                              "Partners Title must have at least 3 characters",
-                          },
+                          // minLength: {
+                          //   value: 6,
+                          //   message:
+                          //     "Partners Title must have at least 3 characters",
+                          // },
                         })}
                       />
                       <label htmlfor="title">Partners Title</label>
